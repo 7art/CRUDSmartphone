@@ -1,0 +1,25 @@
+{
+  "development": {
+  "username": "postgres",
+  "password": "qwerty",
+  "database": "products",
+  "host": "localhost",
+  "dialect": "postgres",    
+  "operatorsAliases": 1
+    },
+    "production": {
+      "username": "postgres",
+      "password": "qwerty",
+      "database": "products",
+      "host": "localhost",
+      "dialect": "postgres", 
+      "dialectOptions": {
+        "ssl": {
+          "rejectUnauthorized": false
+        }
+      },
+      "operatorsAliases": 0,
+      "use_env_variable": "DATABASE_URL"
+     
+    }
+  }
